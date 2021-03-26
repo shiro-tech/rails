@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 #Bootstrap追加 rails03
 gem 'bootstrap-sass'
 
+# rails04 暗号化導入
+gem 'bcrypt'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
