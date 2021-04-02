@@ -14,6 +14,39 @@
       <div class="alert alert-<% key %>" role="alert"><%= value %></div>
     <% end %>
     
+    <nav class="navber navber-default navber-fixed-top navber-transparent">
+      <div class="coantainer">
+        <%= link_to root_path do %>
+          <span><%= image_tag "icons/logo.png", class:"navber-brand" %></span>
+          <% end %>
+          <ul class="nav navber-nav navber-right">
+            <% if logged_in? %>
+              <li>
+                <%= link_to "#" do %>
+                  <%= image_tag "icons/heat.png" %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to logout_path, method: :delete do %>
+                  <%= image_tag "icons/logout.png" %>
+                <% end %>
+              </li>
+              <% else %>
+              <li>
+                <%= link_to new_user_path do %>
+                  <%= image_tag "icons/register.png" %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to login_path do %>
+                  <%= image_tag "icons/login.png" %>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+      </div>
+    </nav>
+    
     <%= yield %>
     
     <script>
