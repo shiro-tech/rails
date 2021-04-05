@@ -11,19 +11,24 @@
 
   <body>
     <% flash.each do |key, value| %>
-      <div class="alert alert-<% key %>" role="alert"><%= value %></div>
+      <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
     <% end %>
     
-    <nav class="navber navber-default navber-fixed-top navber-transparent">
-      <div class="coantainer">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container">
         <%= link_to root_path do %>
-          <span><%= image_tag "icons/logo.png", class:"navber-brand" %></span>
+          <span><%= image_tag "icons/logo.png", class:"navbar-brand" %></span>
           <% end %>
-          <ul class="nav navber-nav navber-right">
+          <ul class="nav navbar-nav navbar-right">
             <% if logged_in? %>
               <li>
                 <%= link_to "#" do %>
                   <%= image_tag "icons/heat.png" %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to new_topic_path do %>
+                  <%= image_tag 'icons/camera.png' %>
                 <% end %>
               </li>
               <li>
@@ -42,6 +47,7 @@
                   <%= image_tag "icons/login.png" %>
                 <% end %>
               </li>
+            
             <% end %>
           </ul>
       </div>

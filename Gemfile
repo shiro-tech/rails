@@ -75,3 +75,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #追加分
 gem 'jquery-rails'
+
+#画像投稿機能の追加
+gem "carrierwave"

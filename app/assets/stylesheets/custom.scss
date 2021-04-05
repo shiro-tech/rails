@@ -42,6 +42,8 @@ h1, h2 {
   }
 }
 
+///arert実装
+
 .alert {
   margin-bottom: 0px;
   position: fixed;
@@ -49,7 +51,10 @@ h1, h2 {
   z-index: 10000;
 }
 
-.navber-transparent {
+
+///ナビゲーションバー実装
+
+.navbar-transparent {
   margin-bottom: 0px;
   background-color: rgba(0,0,0,0.5);
   
@@ -57,11 +62,32 @@ h1, h2 {
     color: #fff !important;
   }
   
-  .navber-brand {
+  .navbar-brand {
     padding: 0px;
     margin-top: 15px;
   }
+  
   img {
     height: 40px;
   }
+}
+
+
+/// topicのcss作成
+
+.btn-black {
+  color: #565656;
+  border: 1px solid #565656;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+  
+  &:hover { 
+    color: #color;
+  }
+}
+
+.topic-new-wrapper {
+    padding-top: 120px;
 }
