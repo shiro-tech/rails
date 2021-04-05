@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
     @current_user = nil
   end
   
-  #課題仮入力
+  #課題入力
   private
   def email_params
   params.require(:session).permit(:email)
