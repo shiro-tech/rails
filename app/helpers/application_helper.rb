@@ -1,4 +1,4 @@
-module ApplicationHelper[]
+module ApplicationHelper
   #ナビゲーション実装（controllerとともに必要）→”DRYコード入力後は不要”
   #def current_user #現在ログインしているUserへ返すメソッド
   #@current_user ||= User.find_by(id: session[:user_id])
