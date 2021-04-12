@@ -7,6 +7,7 @@ class TopicsController < ApplicationController
     @topic = Topic.new
   end
   
+  #Rails06課題
   def logged_in?
     !current_user.nil?
   end

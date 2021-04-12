@@ -38,11 +38,14 @@ class ImageUploader < CarrierWave::Uploader::Base
   #def extension_allowlist
     # %w(jpg jpeg png)
    #end 
+   
+   #Rails06 課題２
    #画像ファイル制限（課題）
     def extension_whitelist
       %w(jpg jpeg png)
     end
     
+    #Rails06 課題２
     #画像容量指定（課題）
     def size_range
       1..10.megabytes
