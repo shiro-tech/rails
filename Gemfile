@@ -78,3 +78,6 @@ gem 'jquery-rails'
 
 #画像投稿機能の追加
 gem "carrierwave"
+
+#画像編集機能の実装
+gem 'mini_magick'

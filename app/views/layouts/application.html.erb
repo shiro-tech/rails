@@ -22,13 +22,13 @@
           <ul class="nav navbar-nav navbar-right">
             <% if logged_in? %>
               <li>
-                <%= link_to "#" do %>
-                  <%= image_tag "icons/heat.png" %>
+                <%= link_to favorites_index_path do %>
+                  <%= image_tag "icons/heart.png" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to new_topic_path do %>
-                  <%= image_tag 'icons/camera.png' %>
+                  <%= image_tag "icons/camera.png" %>
                 <% end %>
               </li>
               <li>
@@ -57,8 +57,8 @@
     
     <script>
       $(function(){
-        $(".alert").fadeout(5000);
-      })
+        $(".alert").fadeOut(5000);
+      });
     </script>
     
   </body>

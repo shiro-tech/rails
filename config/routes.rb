@@ -10,6 +10,10 @@ root 'pages#index'
   resources :users
   resources :topics
   
+  #いいね実装のためのroutes
+  get 'favorites/index'
+  post '/favorites', to: 'favorites#create'
+  #session実装のためのroutes
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
