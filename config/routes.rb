@@ -13,6 +13,7 @@ root 'pages#index'
   #いいね実装のためのroutes
   get 'favorites/index'
   post '/favorites', to: 'favorites#create'
+  delete '/favorites', to: 'favorites#destroy'
   #session実装のためのroutes
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
