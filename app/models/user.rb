@@ -10,4 +10,10 @@ class User < ApplicationRecord
   has_many :topics
   has_many :favorites
   has_many :favorite_topics, through: :favorites, source: 'topic'
+  
+  # #仮で実装　削除制限
+  # def already_favorite?(topic)
+  #   self.favorites.exists?(topic_id: topic.id)
+  # end
+  
 end
