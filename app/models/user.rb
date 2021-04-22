@@ -10,9 +10,9 @@ class User < ApplicationRecord
   has_many :topics
   has_many :favorites, dependent: :destroy
   has_many :favorite_topics, through: :favorites, source: 'topic'
-  # コメント機能実装
+  # コメント機能実装(確認テスト)
   has_many :comments, dependent: :destroy
-  
+
   # #仮で実装　削除制限
   # def already_favorite?(topic)
   #   self.favorites.exists?(topic_id: topic.id)

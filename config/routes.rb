@@ -14,7 +14,7 @@ root 'pages#index'
   get 'favorites/index'
   post '/favorites', to: 'favorites#create'
   delete '/favorites', to: 'favorites#destroy'
-  #コメント実装のためのroutes
+  #コメント実装のためのroutes（確認テスト）
   get 'comments/new'
   get 'comments/index'
   post '/comments', to: 'comments#create'

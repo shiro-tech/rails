@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  #Rails07（確認テスト）
   def index
     @comment_topics = Comment.all.includes(:comment_users)
   end
