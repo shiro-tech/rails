@@ -21,10 +21,22 @@
                 <% end %>
             <% end %>
           
-          <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
-          <p class="topic-text">
-            <%= topic.description %>
-          </p>
+            <%= link_to comments_new_path(topic_id: topic.id) do %>
+              <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+          
+            <% end %>
+            <p class="topic-text">
+              <%= topic.description %>
+            </p>
+            
+            <p class="comments-text">
+              <h2>コメント</h2>
+                <% topic.comments.each do |comment| %>
+                  <p>
+                    <%= comment.text %>
+                  </p>
+                <% end %>  
+            </p>
         </div>
       </div>
     </div>

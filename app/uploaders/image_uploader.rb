@@ -35,15 +35,11 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Add an allowlist of extensions which are allowed to be uploaded.
   # For images you might use something like this:
-  #def extension_allowlist
-    # %w(jpg jpeg png)
-   #end 
+  def extension_allowlist
+     %w(jpg jpeg png)
+  end 
    
-   #Rails06 課題２
-   #画像ファイル制限（課題）
-    def extension_whitelist
-      %w(jpg jpeg png)
-    end
+   
     
     #Rails06 課題２
     #画像容量指定（課題）

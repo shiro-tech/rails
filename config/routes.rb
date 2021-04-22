@@ -14,6 +14,11 @@ root 'pages#index'
   get 'favorites/index'
   post '/favorites', to: 'favorites#create'
   delete '/favorites', to: 'favorites#destroy'
+  #コメント実装のためのroutes
+  get 'comments/new'
+  get 'comments/index'
+  post '/comments', to: 'comments#create'
+  delete '/comments', to: 'comments#destroy'
   #session実装のためのroutes
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'

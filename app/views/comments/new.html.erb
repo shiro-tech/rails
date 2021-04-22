@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-md-offset-4 col-md-4 comment_form" >
+    <h3>コメント入力フォーム</h3>
+    <% if current_user %>
+      <%= form_with(model: @comment, local:true) do |form| %>
+        <%= form.text_area :text, class:"col-md-10 comment_area", placehorder: "コメントする" %>
+        <%= form.hidden_field :topic_id, value: @topic_id %>
+        <p><%= form.submit "送信する" %></p>
+        
+      <% end %>
+    <% else %>
+      <strong><p> コメントの投稿には新規登録/ログインが必要です </p></strong>
+    <% end %>
+  </div>
+</div>
