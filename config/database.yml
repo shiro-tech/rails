@@ -47,6 +47,7 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+#herokuデプロイ用に変更
 production:
   <<: *default
   adaptr: postgresql
