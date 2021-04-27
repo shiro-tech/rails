@@ -50,6 +50,6 @@ test:
 #herokuデプロイ用に変更
 production:
   <<: *default
-  adaptr: postgresql
-  encoding: inicode
+  adapter: postgresql
+  encoding: unicode
   pool: 5
