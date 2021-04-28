@@ -51,6 +51,9 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  
+  #S3ファイルセキュリティ（環境変数）
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -86,3 +89,6 @@ gem "carrierwave"
 
 #画像編集機能の実装
 gem 'mini_magick'
+
+#railsカリキュラム（保存先をS3へ変更するためのgemfile）
+gem 'fog-aws'
